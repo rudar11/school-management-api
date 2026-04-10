@@ -9,13 +9,17 @@ app.use(express.json());
 app.use(cookieParser())
 
 
-//prefix
-app.use("/api" , authRoutes)
-
 
 app.get('/api',(req,res)=>{
     res.send("School Management api service is up and running")
 })
+
+
+
+//prefix
+app.use("/api" , authRoutes)
+
+
 
 
 
