@@ -1,0 +1,72 @@
+{
+  "info": {
+    "_postman_id": "f22bd191-e7b0-4d04-9c45-9ad0a5cfed6c",
+    "name": "school-api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "42542956"
+  },
+  "item": [
+    {
+      "name": "add schools",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Dhirubhai Ambani School\",\r\n  \"address\": \"BKC, Mumbai\",\r\n  \"latitude\": 19.0660,\r\n  \"longitude\": 72.8680\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/addSchool",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getschool",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/listSchools?latitude=28.6129&longitude=77.2295",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "28.6129"
+            },
+            {
+              "key": "longitude",
+              "value": "77.2295"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
