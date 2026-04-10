@@ -10,7 +10,7 @@ app.use(cookieParser())
 
 
 
-app.get('/api',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send("School Management api service is up and running")
 })
 
