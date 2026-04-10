@@ -13,7 +13,7 @@ app.use(cookieParser())
 app.use("/api" , authRoutes)
 
 
-app.get('/',(req,res)=>{
+app.get('/api',(req,res)=>{
     res.send("School Management api service is up and running")
 })
 
